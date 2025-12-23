@@ -238,8 +238,13 @@ python manage.py geocode_fuel_stops_mapsco
 Create a local `.env` file (DO NOT commit it):
 
 ```env
+# Required
+DJANGO_SECRET_KEY=your_key_here
+
 # Optional keys (only needed if you use those geocoders)
 GOOGLE_PLACES_API_KEY=your_key_here
+GOOGLE_MAPS_API_KEY=your_key_here
+GEOCODE_MAPS_API_KEY=your_key_here
 OPENAI_API_KEY=your_key_here
 OPENAI_MODEL=gpt-5-mini
 ```
