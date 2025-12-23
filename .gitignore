@@ -1,0 +1,58 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# ---- Virtualenv ----
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# ---- Django ----
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+# Django migrations (OPTIONAL)
+# If you want to keep migrations, comment the next line
+# core/migrations/
+
+# ---- Environment / Secrets ----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+
+# ---- OS / Editor ----
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ---- Build / Cache ----
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---- Data files (optional safety) ----
+# If you want to keep cleaned CSV in repo, comment these
+*.csv
+*.xlsx
+*.parquet
+*.zip
+
+# BUT allow specific CSV you want to include (example)
+!fuel-stops-clean.csv
+!fuel-prices-for-be-assessment.csv
